@@ -141,38 +141,7 @@ Both models were evaluated on an identical **stratified holdout test set** (20% 
 
 ---
 
-## 7. Installation & Setup Instructions (macOS)
-
-Open Terminal and navigate to the project directory:
-
-```bash
-cd "/Users/saikiran/Downloads/CUSTOMER CHURN PREDICTION"
-```
-
-### Step 1: Create and Activate Virtual Environment
-```bash
-# Create dedicated virtual environment named .venv
-python3 -m venv .venv
-
-# Activate the virtual environment
-source .venv/bin/activate
-```
-
-### Step 2: Install Dependencies
-```bash
-# Upgrade pip and install all required packages inside .venv
-pip install --upgrade pip
-pip install -r requirements.txt
-```
-
-### Step 3: Verify the Environment
-```bash
-python -c "import pandas, sklearn, streamlit; print('Environment is ready!')"
-```
-
----
-
-## 8. How to Reproduce & Run
+## 7. How to Reproduce & Run
 
 ### A. Run Automated Unit Tests
 ```bash
@@ -196,7 +165,7 @@ Open your browser at **http://localhost:8501** to access the dashboard.
 
 ---
 
-## 9. Dashboard Features
+## 8. Dashboard Features
 
 1. **Executive Overview**: Real-time KPI metric tiles, high-level business findings, and sample dataset view.
 2. **Customer Segment Explorer**: Multidimensional filtering across contracts, internet services, payment types, and senior citizen status with instantaneous cohort size and churn rate delta calculations.
@@ -209,7 +178,7 @@ Open your browser at **http://localhost:8501** to access the dashboard.
 
 ---
 
-## 10. Limitations & Ethical Considerations
+## 9. Limitations & Ethical Considerations
 
 - **Probabilistic Risk**: Model predictions are statistical estimates; they indicate probability, not certainty.
 - **Precision vs. Recall Tradeoff**: Prioritizing recall (~80%) to avoid missing churners produces false positives (~48% of flagged customers would not have churned). Retention strategies should focus on value-add incentives (e.g., support vouchers, plan optimizations) rather than aggressive interventions.
